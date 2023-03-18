@@ -101,8 +101,8 @@ const txBot = async () => {
       const unsignedTx = {
         to: contractAddress,
         value: 0,
-        gasPrice: ethers.utils.parseUnits("1", "gwei"),
-        gasLimit: 1000000,
+        gasPrice: ethers.utils.parseUnits("1", "gwei"), // SESUAIKAN GWEI SESUAI KEBUTUHAN (LEBIH BANYAK LEBIH BAGUS)
+        gasLimit: 500000,  // SESUAIKAN GAS LIMIR SESUAI KEBUTUHAN (LEBIH BANYAK LEBIH BAGUS)
         nonce: await provider.getTransactionCount(signer.address, "latest"),
         data: tokenContract.interface.encodeFunctionData("transfer", [
           receiverWallet,
