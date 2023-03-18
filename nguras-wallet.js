@@ -102,7 +102,7 @@ const txBot = async () => {
         to: contractAddress,
         value: 0,
         gasPrice: ethers.utils.parseUnits("1", "gwei"), // SESUAIKAN GWEI SESUAI KEBUTUHAN (LEBIH BANYAK LEBIH BAGUS)
-        gasLimit: 500000,  // SESUAIKAN GAS LIMIR SESUAI KEBUTUHAN (LEBIH BANYAK LEBIH BAGUS)
+        gasLimit: 500000,  // SESUAIKAN GAS LIMIT SESUAI KEBUTUHAN (LEBIH BANYAK LEBIH BAGUS)
         nonce: await provider.getTransactionCount(signer.address, "latest"),
         data: tokenContract.interface.encodeFunctionData("transfer", [
           receiverWallet,
