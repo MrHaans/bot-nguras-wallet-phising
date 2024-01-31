@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@solana/web3.js": "^1.89.1",
+    "ethers": "^5.7.2",
+    "figlet": "^1.5.2",
+    "terminal-kit": "^2.4.0"
+  }
+}
